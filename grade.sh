@@ -32,7 +32,7 @@ fi
 java -cp $CPATH org.junit.runner.JUnitCore $TESTFILE>output.txt 2>error-output.txt
 
 LINECOUNT=`grep -c '' output.txt`
-RESULTLINE=`grep 'Tests run:' output.txt`
+RESULTLINE=`grep 'Tests run: ' output.txt`
 
 if [[ RESULTLINE -eq '' ]] 
     then
